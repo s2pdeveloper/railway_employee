@@ -1,0 +1,7 @@
+{
+  "name": "railway-employee",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

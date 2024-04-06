@@ -1,0 +1,56 @@
+<ion-menu contentId="main-content" type="overlay">
+  <ion-content>
+    <ion-list class="ion-no-padding" id="inbox-list">
+      <ion-item class="ion-margin-bottom">
+        <ion-list-header class="ion-no-padding ion-margin-bottom">
+          <div class="menu-header-part">
+            <div class="img">
+              <img src="" alt="">
+            </div>
+            <div class="text ion-padding-start">
+              <ion-text class="text-bold  ion-text-uppercase">
+                <p class="ion-no-margin">Minal madhukar joshi</p>
+              </ion-text>
+              <ion-label class="fade-text">
+                <h4>Active</h4>
+              </ion-label>
+            </div>
+          </div>
+        </ion-list-header>
+      </ion-item>
+
+      <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+        <ion-item  routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+          routerLinkActive="selected">
+          <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+          <ion-label>{{ p.title }}</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+
+    <ion-list class="ion-no-padding " id="labels-list">
+      <ion-item *ngFor="let label of labels" lines="none" [routerLink]="[label.url]">
+        <ion-icon aria-hidden="true" slot="start" [ios]="label.icon + '-outline'"
+          [md]="label.icon + '-sharp'"></ion-icon>
+        <ion-label>{{ label.title }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="main-content"></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="text-bold welcome-text" class="color-primary">
+        
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="shadow-none" shape="round">
+          <ion-icon name="person-circle-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</div>
