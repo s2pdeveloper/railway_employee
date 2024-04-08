@@ -1,13 +1,280 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>biodata-form</ion-title>
+    <ion-buttons class="color-light" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="nav-items">
+      <img class="header-img" src="../../../../assets/logo.png" alt="" />
+      <ion-label>RESS</ion-label>
+      <img class="header-img" src="../../../../assets/CRIS_logo.png" alt="" />
+    </div>
+    <ion-buttons class="color-light" slot="end">
+      <ion-back-button defaultHref="default/home"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">biodata-form</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="ion-padding-horizontal title">
+    <h1 class="ion-no-margin">BIO DATA</h1>
+  </div>
+  <form [formGroup]="bioDataForm">
+    <ion-grid fixed>
+      <ion-row class="detail-bg">
+        <ion-col size="12" class="ion-no-padding">
+          <h1 class="ion-no-margin ion-text-center">Personal Details</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Name"
+              labelPlacement="stacked"
+              type="text"
+              formControlName="name"
+            >
+            </ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Employee No."
+              labelPlacement="stacked"
+              formControlName="empId"
+              type="number"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Father/Husband"
+              labelPlacement="stacked"
+              formControlName="fatherHusband"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="DOB"
+              labelPlacement="stacked"
+              formControlName="DOB"
+              type="date"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Mobile No."
+              labelPlacement="stacked"
+              formControlName="mobile"
+              type="number"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Email"
+              labelPlacement="stacked"
+              formControlName="email"
+              type="email"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Aadhar"
+              labelPlacement="stacked"
+              formControlName="aadhar"
+              type="number"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Pan"
+              labelPlacement="stacked"
+              formControlName="pan"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="HRMS ID"
+              formControlName="HRMS"
+              labelPlacement="stacked"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed>
+      <ion-row class="job-bg">
+        <ion-col size="12" class="ion-no-padding">
+          <h1 class="ion-no-margin ion-text-center">Job Related</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="AU/RLY"
+              labelPlacement="stacked"
+              formControlName="AURLY"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Bill Unit"
+              labelPlacement="stacked"
+              formControlName="billUnit"
+              type="text"
+            ></ion-input></ion-item
+        ></ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Designation"
+              labelPlacement="stacked"
+              formControlName="designation"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Department"
+              labelPlacement="stacked"
+              formControlName="department"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="DOA"
+              labelPlacement="stacked"
+              formControlName="DOA"
+              type="date"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="DOI"
+              labelPlacement="stacked"
+              formControlName="DOI"
+              type="date"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="DOR"
+              labelPlacement="stacked"
+              formControlName="DOR"
+              type="date"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Station"
+              labelPlacement="stacked"
+              formControlName="station"
+              type="text"
+            ></ion-input></ion-item
+        ></ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed>
+      <ion-row class="pay-bg">
+        <ion-col size="12" class="ion-no-padding">
+          <h1 class="ion-no-margin ion-text-center">Pay Related</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Pay Rate"
+              labelPlacement="stacked"
+              formControlName="payRate"
+              type="number"
+            ></ion-input></ion-item
+        ></ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Level"
+              labelPlacement="stacked"
+              formControlName="level"
+              type="number"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Bank"
+              labelPlacement="stacked"
+              formControlName="bank"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="IFSC code"
+              labelPlacement="stacked"
+              formControlName="IFSC"
+              type="text"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Account No."
+              labelPlacement="stacked"
+              formControlName="account"
+              type="number"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item class="input-class" lines="none">
+            <ion-input
+              label="Data Prepared On:"
+              labelPlacement="stacked"
+              formControlName="preparedDate"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
 </ion-content>
+<ion-footer>
+  <ion-button expand="full" (click)="submit()">Submit</ion-button>
+</ion-footer>

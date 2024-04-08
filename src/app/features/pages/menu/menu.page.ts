@@ -11,8 +11,8 @@ export class MenuPage implements OnInit {
   private activatedRoute = inject(ActivatedRoute);
   constructor() {}
   public appPages = [
-    { title: 'Bio data', url: '/default/', icon: 'alert-circle' },
-    { title: 'Salary', url: '/default/', icon: 'call' },
+    { title: 'Bio Data', url: '/default/biodata-form', icon: '../../../../assets/user-placeholder.jpg' },
+    { title: 'Salary', url: '/default/salary-form', icon: '../../../../assets/salary-icon.jpeg' },
   ];
   public labels = [{ title: '', url: '', icon: '' }];
   ngOnInit() {

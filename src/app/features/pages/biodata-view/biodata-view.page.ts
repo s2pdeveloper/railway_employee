@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { LocalStorageService } from 'src/app/core/local-storage.service';
 
 @Component({
   selector: 'app-biodata-view',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BiodataViewPage implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  private storageService = inject(LocalStorageService);
+  bioData:any;
+  constructor() {
+   this.bioData = this.storageService.get('BioData');
   }
-
+  ngOnInit() {
+    console.log('bioData',this.bioData);
+  }
 }

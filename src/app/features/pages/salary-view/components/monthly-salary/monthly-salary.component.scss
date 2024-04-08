@@ -24,7 +24,7 @@ ion-badge {
   display: flex;
   justify-content: center;
   h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
   }
 }
@@ -93,4 +93,26 @@ ion-badge {
   font-weight: 600;
   color: #000;
   transform: scaleY(1.25);
+}
+.slip-text {
+  color: #29528c;
+  font-weight: 700;
+  transform: scaleY(1.25);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.pdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #000;
+  background-color: #48a3ec;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.upper-row{
+    margin: 0.25rem;
 }

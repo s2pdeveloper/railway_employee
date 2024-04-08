@@ -3,10 +3,112 @@
     <ion-buttons class="color-light" slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>home</ion-title>
+    <div class="nav-items">
+      <img class="header-img" src="../../../../assets/logo.png" alt="" />
+      <ion-label>RESS</ion-label>
+      <img class="header-img" src="../../../../assets/CRIS_logo.png" alt="" />
+    </div>
+    <ion-buttons class="color-light" slot="end">
+      <div class="ion-no-padding">
+        <ion-icon
+          size="large"
+          class="ion-margin-end notification-icon"
+          name="notifications"
+        ></ion-icon>
+        <ion-badge color="secondary">null</ion-badge>
+      </div>
+      <ion-icon size="large" name="ellipsis-vertical-outline"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <h1>ghfghg</h1>
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-label><h1>Railway Employee Self Service</h1></ion-label>
+  <ion-label><h1 class="text-heading">Indian Railways</h1></ion-label>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-uppercase"
+        >welcome {{bioData.name}}</ion-card-title
+      >
+      <ion-card-title class="ion-text-capitalize"
+        >Employee no. {{bioData.empId}}</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content class="ion-no-padding">
+      <img src="../../../../assets/no-image.png" alt="" />
+    </ion-card-content>
+  </ion-card>
+  <ion-label
+    ><h5 class="text-muted ion-text-uppercase">
+      *ALL DATA PROVIDED HERE ARE PROVISIONAL
+    </h5></ion-label
+  >
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-around">
+      <ion-col size="4" (click)="navigateTo('/default/biodata-view')">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/user-placeholder.jpg" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">Bio Data</h5></ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="4" (click)="navigateTo('/default/salary-view')">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/salary-icon.jpeg" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">Salary</h5></ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/piggy-bank.png" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">NPS</h5></ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/income.jpg" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">Income Tax</h5></ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/home-loan.jpg" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">Loans/Advances</h5></ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/leave.png" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">Leave</h5></ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/family.png" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">Family</h5></ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <div class="img-box">
+            <img class="icon-img" src="../../../../assets/retirement.png" alt="" />
+          </div>
+          <ion-label><h5 class="ion-text-capitalize">Retirement Benefits</h5></ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,0 +1,94 @@
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  .header-img {
+    height: 50px;
+  }
+  ion-label {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0.25rem;
+  }
+}
+.notification-icon {
+  position: relative;
+}
+ion-badge {
+  position: absolute;
+  bottom: 65%;
+  right: 35%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+.detail-bg {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  background: #f5a204;
+  padding: 0.5rem;
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    transform: scaleY(1.25);
+  }
+}
+.job-bg {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  background: #2633be;
+  padding: 0.5rem;
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    transform: scaleY(1.25);
+  }
+}
+.pay-bg {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  background: #6dcd45;
+  padding: 0.5rem;
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    transform: scaleY(1.25);
+  }
+}
+.form-row {
+  padding: 0.5rem;
+  --background: linear-gradient(
+    180deg,
+    rgb(222, 229, 237) 45%,
+    rgb(255, 255, 255) 112%
+  );
+  .value {
+    color: #29528c;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .field {
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+ion-col{
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+}

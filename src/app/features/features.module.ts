@@ -15,6 +15,7 @@ import { MenuPageModule } from './pages/menu/menu.module';
     FormsModule,
     IonicModule,
     MenuPageModule,
+    
     FeaturesPageRoutingModule
   ],
   declarations: [FeaturesPage]

@@ -12,3 +12,48 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.input-fill-solid.sc-ion-input-md-h .input-wrapper.sc-ion-input-md {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+ion-header {
+  background: linear-gradient(
+    97deg,
+    rgba(81, 163, 229, 1) 11%,
+    rgba(85, 163, 227, 1) 13%,
+    rgba(232, 175, 148, 1) 83%
+  );
+}
+ion-toolbar {
+  --background: auto;
+  ion-buttons{
+    color: #fff;
+  }
+}
+ion-content {
+  --keyboard-offset: 0px !important;
+}
+.input-class {
+  --border-color: #d7d8da;
+  --border-radius: 2.6em;
+  --border-width: 1px;
+  font-size: 16px;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px #dee2e6;
+  --background: linear-gradient(
+    180deg,
+    rgb(222, 229, 237) 45%,
+    rgb(255, 255, 255) 112%
+  );
+}
+
+.input-class:focus-within {
+  --border-color: #fff;
+}
+
+.sc-ion-input-md-h {
+}

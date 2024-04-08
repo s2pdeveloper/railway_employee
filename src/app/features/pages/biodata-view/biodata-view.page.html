@@ -1,13 +1,171 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>biodata-view</ion-title>
+    <ion-buttons class="color-light" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="nav-items">
+      <img class="header-img" src="../../../../assets/logo.png" alt="" />
+      <ion-label>RESS</ion-label>
+      <img class="header-img" src="../../../../assets/CRIS_logo.png" alt="" />
+    </div>
+    <ion-buttons class="color-light" slot="end">
+        <ion-back-button defaultHref="default/home"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">biodata-view</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="ion-padding title">
+    <h1 class="ion-no-margin">BIO DATA</h1>
+  </div>
+  <ion-grid>
+    <ion-row class="detail-bg">
+      <ion-col size="12" class="ion-no-padding">
+        <h1 class="ion-no-margin ion-text-center">Personal Details</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col class="field" size="6">NAME</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.name}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">FATHER/HUSBAND</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.fatherHusband}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">DOB</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.DOB}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">MOBILE NO.</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.mobile}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">EMAIL</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.email}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">AADHAR</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.aadhar}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">PAN</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.pan}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">HRMS ID</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.HRMS}}</ion-col
+      >
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="job-bg">
+      <ion-col size="12" class="ion-no-padding">
+        <h1 class="ion-no-margin ion-text-center">Job Related</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">AU/RLY</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.AURLY}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="4" class="field">BILL UNIT</ion-col>
+      <ion-col size="8" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.billUnit}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">DESIGNATION</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.designation}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">DEPARTMENT</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.department}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">DOA</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.DOA}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">DOI</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.DOI}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">DOR</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.DOR}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">STATION</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.station}}</ion-col
+      >
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="pay-bg">
+      <ion-col size="12" class="ion-no-padding">
+        <h1 class="ion-no-margin ion-text-center">Pay Related</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">PAY RATE</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.payRate}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">LEVEL</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.level}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">BANK</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.bank}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">IFSC CODE</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.IFSC}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col size="6" class="field">ACCOUNT NO.</ion-col>
+      <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+        >{{bioData.account}}</ion-col
+      >
+    </ion-row>
+    <ion-row class="ion-justify-content-between">
+      <ion-col size="12" class="ion-text-center prepared-text">Data Prepared On: {{bioData.preparedDate}}</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

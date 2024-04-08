@@ -88,15 +88,10 @@
         text-transform: uppercase;
       }
   }
-  .label-text {
-    font-size: 0.67rem;
-    font-weight: 700;
-}
-ion-segment-button{
-    --background-checked: #fff;
+  .prepared-text {
+    font-size: 1.25rem;
+    font-weight: 600;
     color: #000;
-    --indicator-color: transparent;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
+    transform: scaleY(1.25);
+  }
   

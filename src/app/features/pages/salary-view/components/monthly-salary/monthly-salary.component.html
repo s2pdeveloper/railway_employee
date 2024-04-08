@@ -1,0 +1,210 @@
+<div class="ion-padding-top title">
+  <h1 class="ion-no-margin">Salary for month of Mar 2024</h1>
+</div>
+<ion-grid fixed>
+  <ion-row class="upper-row">
+    <ion-col size="5" class="slip-text"> PaySlip in PDF </ion-col>
+    <ion-col size="2" class="pdf"> PDF </ion-col>
+  </ion-row>
+  <ion-row class="detail-bg">
+    <ion-col size="12" class="ion-no-padding">
+      <h1 class="ion-no-margin ion-text-center">Personal Details</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">NAME</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.name}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">DESIGNATION</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.designation}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">DEPARTMENT</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.department}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="4">BILL UNIT</ion-col>
+    <ion-col size="8" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.billUnit}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">PAY LEVEL</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value">{{salaryData.payLevel}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">PAYRATE</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.payRate}}</ion-col
+    >
+  </ion-row>
+</ion-grid>
+<ion-grid fixed>
+  <ion-row class="job-bg">
+    <ion-col size="12" class="ion-no-padding">
+      <h1 class="ion-no-margin ion-text-center">Earnings Details</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">BASIC PAY</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.basicPay}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">DEARNESS ALLOWANCE</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.dearnessAllowance}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">TRANSPORT ALLOWANCE</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.transportAllowance}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">TRAVELLING ALLOWANCE</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >View Details</ion-col
+    >
+    <ion-col size="2" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.travellingAllowance}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">BREAKDOWN ALLOWANCE</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.breakdownAllowance}}</ion-col
+    >
+  </ion-row>
+</ion-grid>
+<ion-grid fixed>
+  <ion-row class="job-bg">
+    <ion-col size="12" class="ion-no-padding">
+      <h1 class="ion-no-margin ion-text-center">Deduction Details</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="9">RLY EMPLOYEE INSURANCE SCHEME-C</ion-col>
+    <ion-col size="3" class="ion-text-uppercase ion-text-end value">{{salaryData.REIS}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">NEW PENSION SCHEME TIER-I</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.newPensionScheme}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">ELECTRIC ENERGY CHARGES</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >View Details</ion-col
+    >
+    <ion-col size="2" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.electricEnergyCharges}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">WATER CHARGES</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >View Details</ion-col
+    >
+    <ion-col size="2" class="ion-text-uppercase ion-text-end value">{{salaryData.waterCharges}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">PROF. TAX-MP</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.profTaxMp}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">DRM DISTRESS FUND BPL</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData.DDFB}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">WELFARECEN BPL</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData.welfarecenBpl}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">RLY INST BHOPAL</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData.RLYInstBhopal}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">CRECCS CMTD BPL</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.creccsCMTDBpl}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content- form-row">
+    <ion-col class="field" size="8">LOAN-ECCS BPL</ion-col>
+    <ion-col size="4">
+      <ion-row>
+        <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+          >{{loanECCSBPLS}}</ion-col
+        >
+        <ion-col size="6" class="ion-text-uppercase ion-text-end value">
+          {{loanECCSBPLL}}</ion-col
+        >
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row class="pay-bg">
+    <ion-col size="12" class="ion-no-padding">
+      <h1 class="ion-no-margin ion-text-center">SUMMARY</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col size="8" class="field">PAY DAYS</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.payDays}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col size="8" class="field">GROSS</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.gross}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col size="8" class="field">DEDUCTION</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.deduction}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col size="8" class="field">NETPAY</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.netPay}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col size="4" class="field">PAY MODE</ion-col>
+    <ion-col size="8" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.payMode}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col size="6" class="field">BANK</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.bank}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col size="6" class="field">ACCOUNT NO</ion-col>
+    <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData.accountNo}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between">
+    <ion-col size="12" class="ion-text-center prepared-text">Data Prepared On: {{salaryData.preparedDate}}</ion-col>
+  </ion-row>
+</ion-grid>

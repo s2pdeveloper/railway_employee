@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalStorageService } from 'src/app/core/local-storage.service';
 
 @Component({
   selector: 'app-home',
@@ -6,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
-  constructor() { }
-
+  private storageService = inject(LocalStorageService);
+  bioData:any;
+  salaryData:any;
+  constructor(private router: Router) {
+   this.bioData = this.storageService.get('BioData');
+   this.salaryData = this.storageService.get('SalaryData');
+  }
   ngOnInit() {
-    console.log("home");
+    console.log('bioData',this.bioData);
+    console.log('salaryData',this.salaryData);
     
   }
-
+  navigateTo(path: any) {
+    this.router.navigate([path]);
+  }
 }
