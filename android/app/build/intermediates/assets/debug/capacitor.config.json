@@ -1,0 +1,8 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "railway-employee",
+	"webDir": "www",
+	"server": {
+		"androidScheme": "https"
+	}
+}
