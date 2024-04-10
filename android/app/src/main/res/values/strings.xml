@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RESS</string>
+    <string name="title_activity_main">RESS</string>
+    <string name="package_name">com.ress.app</string>
+    <string name="custom_url_scheme">com.ress.app</string>
+</resources>

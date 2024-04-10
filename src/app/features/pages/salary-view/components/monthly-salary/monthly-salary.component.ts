@@ -16,7 +16,7 @@ export class MonthlySalaryComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loanECCSBPLS = this.salaryData.loanECCSBPL.split(' ')[0];
-    this.loanECCSBPLL = this.salaryData.loanECCSBPL.split(' ')[1];
+    this.loanECCSBPLS = this.salaryData?.loanECCSBPL.split(' ')[0];
+    this.loanECCSBPLL = this.salaryData?.loanECCSBPL.split(' ')[1];
   }
 }
