@@ -1,0 +1,19 @@
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 0.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #48a3ec;
+    .label-text{
+        color:#1d517b;
+        margin-top: 0.25rem;
+        h1,h2{
+            margin: 0;
+            font-weight: 600;
+            transform: scaleY(1.1);
+        }
+    }
+}

@@ -4,12 +4,16 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'default',
+    redirectTo: 'onboarding',
     pathMatch: 'full'
   },
   {
     path: 'default',
     loadChildren: () => import('./features/features.module').then( m => m.FeaturesPageModule)
+  },
+  {
+    path: 'onboarding',
+    loadChildren: () => import('./onboarding/onboarding.module').then( m => m.OnboardingPageModule)
   },
 ];
 

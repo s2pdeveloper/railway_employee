@@ -17,6 +17,9 @@ export class AppComponent {
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor(private router : Router) {}
   ngOnInit(): void {
-    this.router.navigate(['/default/home']);
+    this.router.navigate(['/onboarding']);
+    setTimeout(() =>{
+      this.router.navigate(['/default/home']);
+    },500)
   }
 }
