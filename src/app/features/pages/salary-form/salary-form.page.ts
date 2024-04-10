@@ -1,6 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { LocalStorageService } from 'src/app/core/local-storage.service';
+import { ToastService } from 'src/app/services/toast.service';
 
 @Component({
   selector: 'app-salary-form',
@@ -9,7 +10,7 @@ import { LocalStorageService } from 'src/app/core/local-storage.service';
 })
 export class SalaryFormPage implements OnInit {
   private storageService = inject(LocalStorageService);
-  constructor() { }
+  constructor(private toast: ToastService) { }
 
   ngOnInit() {
   }
@@ -47,5 +48,6 @@ export class SalaryFormPage implements OnInit {
   submit() {
     let formData = this.salaryDataForm.value;
     this.storageService.set('SalaryData', formData);
+    this.toast.success("SalaryData added successfully");
   }
 }

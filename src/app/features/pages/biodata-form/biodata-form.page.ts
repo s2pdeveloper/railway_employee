@@ -1,6 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { LocalStorageService } from 'src/app/core/local-storage.service';
+import { ToastService } from 'src/app/services/toast.service';
 
 @Component({
   selector: 'app-biodata-form',
@@ -9,13 +10,12 @@ import { LocalStorageService } from 'src/app/core/local-storage.service';
 })
 export class BiodataFormPage implements OnInit {
   private storageService = inject(LocalStorageService);
-  bioData:any;
-  constructor() {
-   this.bioData = this.storageService.get('BioData');
+  bioData: any;
+  constructor(private toast: ToastService) {
+    this.bioData = this.storageService.get('BioData');
   }
   ngOnInit() {
-    console.log('bioData',this.bioData);
-    
+    console.log('bioData', this.bioData);
   }
   bioDataForm = new FormGroup({
     name: new FormControl('DEEP SINGH THAKUR'),
@@ -45,5 +45,6 @@ export class BiodataFormPage implements OnInit {
   submit() {
     let formData = this.bioDataForm.value;
     this.storageService.set('BioData', formData);
+    this.toast.success("BioData added successfully");
   }
 }
