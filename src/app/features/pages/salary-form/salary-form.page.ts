@@ -44,6 +44,7 @@ export class SalaryFormPage implements OnInit {
     bank : new FormControl('PNB(PUNB0322700'),
     accountNo : new FormControl(3227001500030364),
     preparedDate: new FormControl('23-MAR-2024 01:00:17'),
+    salaryMonth : new FormControl(),
   });
   submit() {
     let formData = this.salaryDataForm.value;
