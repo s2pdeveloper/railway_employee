@@ -11,6 +11,8 @@ export class MonthlySalaryComponent implements OnInit {
   salaryData: any;
   loanECCSBPLS: number = 0;
   loanECCSBPLL: number = 0;
+  loanECCSBWKS: number = 0;
+  loanECCSWKL: number = 0;
   constructor() {
     this.salaryData = this.storageService.get('SalaryData');
   }
@@ -18,5 +20,7 @@ export class MonthlySalaryComponent implements OnInit {
   ngOnInit() {
     this.loanECCSBPLS = this.salaryData?.loanECCSBPL.split(' ')[0];
     this.loanECCSBPLL = this.salaryData?.loanECCSBPL.split(' ')[1];
+    this.loanECCSBWKS = this.salaryData?.loanECCSBWK.split(' ')[0];
+    this.loanECCSWKL = this.salaryData?.loanECCSBWK.split(' ')[1];
   }
 }

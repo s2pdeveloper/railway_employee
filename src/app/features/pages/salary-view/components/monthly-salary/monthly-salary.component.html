@@ -65,26 +65,48 @@
     >
   </ion-row>
   <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">ARREARS D.A.</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData?.arrearsDA}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">HOUSE RENT ALLOWANCE.</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData?.houseRentAllowance}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
     <ion-col class="field" size="8">TRANSPORT ALLOWANCE</ion-col>
     <ion-col size="4" class="ion-text-uppercase ion-text-end value"
       >{{salaryData?.transportAllowance}}</ion-col
     >
   </ion-row>
   <ion-row class="ion-justify-content-between form-row">
-    <ion-col class="field" size="6">TRAVELLING ALLOWANCE</ion-col>
+    <ion-col class="field" size="8">CELL ALLOWANCE</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData?.cellAllowance}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="6">NIGHT DUTY ALLOWANCE</ion-col>
     <ion-col size="4" class="ion-text-uppercase ion-text-end value"
       >View Details</ion-col
     >
     <ion-col size="2" class="ion-text-uppercase ion-text-end value"
-      >{{salaryData?.travellingAllowance}}</ion-col
+      >{{salaryData?.nightDutyAllowance}}</ion-col
     >
   </ion-row>
-  <ion-row class="ion-justify-content-between form-row">
-    <ion-col class="field" size="8">BREAKDOWN ALLOWANCE</ion-col>
-    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
-      >{{salaryData?.breakdownAllowance}}</ion-col
-    >
-  </ion-row>
+    <ion-row class="ion-justify-content-between form-row">
+      <ion-col class="field" size="6">NATIONAL HOLIDAYS ALLOWANCE</ion-col>
+      <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+        >View Details</ion-col
+      >
+      <ion-col size="2" class="ion-text-uppercase ion-text-end value"
+        >{{salaryData?.nationalHolidayAllowance}}</ion-col
+      >
+    </ion-row>
+
 </ion-grid>
 <ion-grid fixed>
   <ion-row class="job-bg">
@@ -93,10 +115,47 @@
     </ion-col>
   </ion-row>
   <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="9">PROVIDENT FUND SUBSCRIPTION</ion-col>
+    <ion-col size="3" class="ion-text-uppercase ion-text-end value">{{salaryData?.PFS}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
     <ion-col class="field" size="9">RLY EMPLOYEE INSURANCE SCHEME-C</ion-col>
     <ion-col size="3" class="ion-text-uppercase ion-text-end value">{{salaryData?.REIS}}</ion-col>
   </ion-row>
   <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">PROF. TAX-MP</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData?.profTaxMp}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">DRM DISTRESS FUND BPL</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData?.DDFB}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">RLY INST BHOPAL</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData?.RLYInstBhopal}}</ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">CRECCS CMTD BPL</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData?.creccsCMTDBpl}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">CMTD ECCS WCR KOTA</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData?.creccsCMTDEWK}}</ion-col
+    >
+  </ion-row>
+  <ion-row class="ion-justify-content-between form-row">
+    <ion-col class="field" size="8">PERSONAL COMPUTER ADV. RECOVERY</ion-col>
+    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
+      >{{salaryData?.PCAR}}</ion-col
+    >
+  </ion-row>
+
+  <!-- <ion-row class="ion-justify-content-between form-row">
     <ion-col class="field" size="8">NEW PENSION SCHEME TIER-I</ion-col>
     <ion-col size="4" class="ion-text-uppercase ion-text-end value"
       >{{salaryData?.newPensionScheme}}</ion-col
@@ -118,30 +177,14 @@
     >
     <ion-col size="2" class="ion-text-uppercase ion-text-end value">{{salaryData?.waterCharges}}</ion-col>
   </ion-row>
-  <ion-row class="ion-justify-content-between form-row">
-    <ion-col class="field" size="8">PROF. TAX-MP</ion-col>
-    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
-      >{{salaryData?.profTaxMp}}</ion-col
-    >
-  </ion-row>
-  <ion-row class="ion-justify-content-between form-row">
-    <ion-col class="field" size="8">DRM DISTRESS FUND BPL</ion-col>
-    <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData?.DDFB}}</ion-col>
-  </ion-row>
+
+
   <ion-row class="ion-justify-content-between form-row">
     <ion-col class="field" size="8">WELFARECEN BPL</ion-col>
     <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData?.welfarecenBpl}}</ion-col>
-  </ion-row>
-  <ion-row class="ion-justify-content-between form-row">
-    <ion-col class="field" size="8">RLY INST BHOPAL</ion-col>
-    <ion-col size="4" class="ion-text-uppercase ion-text-end value">{{salaryData?.RLYInstBhopal}}</ion-col>
-  </ion-row>
-  <ion-row class="ion-justify-content-between form-row">
-    <ion-col class="field" size="8">CRECCS CMTD BPL</ion-col>
-    <ion-col size="4" class="ion-text-uppercase ion-text-end value"
-      >{{salaryData?.creccsCMTDBpl}}</ion-col
-    >
-  </ion-row>
+  </ion-row> -->
+
+
   <ion-row class="ion-justify-content- form-row">
     <ion-col class="field" size="8">LOAN-ECCS BPL</ion-col>
     <ion-col size="4">
@@ -155,9 +198,22 @@
       </ion-row>
     </ion-col>
   </ion-row>
+  <ion-row class="ion-justify-content- form-row">
+    <ion-col class="field" size="8">LOAN ECCS WCR KOTA</ion-col>
+    <ion-col size="4">
+      <ion-row>
+        <ion-col size="6" class="ion-text-uppercase ion-text-end value"
+          >{{loanECCSBWKS}}</ion-col
+        >
+        <ion-col size="6" class="ion-text-uppercase ion-text-end value">
+          {{loanECCSWKL}}</ion-col
+        >
+      </ion-row>
+    </ion-col>
+  </ion-row>
 </ion-grid>
 <ion-grid>
-  <ion-row class="pay-bg">
+  <ion-row class="detail-bg">
     <ion-col size="12" class="ion-no-padding">
       <h1 class="ion-no-margin ion-text-center">SUMMARY</h1>
     </ion-col>
